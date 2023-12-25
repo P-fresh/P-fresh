@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+:root {
+    direction: ltr;
+    --childColor: #033a07;
+    --mainColor: #0a570f;
+}
+html { scroll-behavior: smooth; }
+* {
+    font-family: 'Cairo', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 5% repeat(10, auto) 5%;
+    background-color: var(--mainColor);
+
+}
+/* send order start */
+
+.swal2-backdrop-show {
+    /* background-color: var(--mainColor) !important; */
+}
+.swal2-show {
+    background-color: var(--childColor) !important;
+    color: white;
+}
+.swal2-show input {
+    /* background-color: var(--childColor); */
+        
+}
+/* send order end */
+/* header section start */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--childColor);
+    grid-column: 1/11;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0);
+    z-index: 555;
+}
+header .logo {
+    color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    border-bottom: 3px solid #0a1951;
+    /* padding: 18px; */
+
+}
+nav a:hover {
+    color: #02071d;
+    border-bottom: 5px solid ;
+
+}
+.logo {
+    font-size: 30px;
+    border-bottom: 5px solid #0a1951;
+    padding: 5px;
+    /* text-shadow: 5px 5px 5px black; */
+    font-family: 'Cairo', sans-serif ;
+}
+.logo:hover {
+    color: #02071d;
+    border-bottom: 10px solid ;
+    opacity: 0.5;
+}
+/* header section end */
+/* %% */
+/* section section start */
+section {
+    background-color: var(--mainColor);
+    grid-column: 1/11;
+    grid-row: 2/11;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dir:hover {
+    transform: scale(1.2);
+}
+.dir2:hover {
+    transform: scaley(1.3) rotate(180deg);
+}
+/* CONTENT ONE START */
+.content-1 {
+    /* background-image: url(../images/WhatsApp\ Image\ 2023-12-18\ at\ 7.10.52\ PM.WebP); */
+    /* background-size: 100% 100% !important; */
+    /* background-position: 50% 50%; */
+    background-repeat: no-repeat;
+    width: calc(100% / 1);
+    height: calc(100% / 3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 150px;
+    /* border-radius: 20px ; */
+    /* box-shadow: 2px 2px 2px ; */
+    margin-bottom: 10px;
+}
+
+.dir {
+    bottom: 250px;
+    z-index: 111;
+    left: 12px;
+    opacity: 0.8;
+}
+.dir2 {
+    bottom: 200px;
+    z-index: 22;
+    left: 10px;
+    transform: rotate(180deg);
+    opacity: 0.8;
+
+}
+
+h1 {
+    z-index: 111;
+    /* color: rgb(0, 0, 0); */
+    position: absolute;
+    right: 50% !important;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+.h1-photo {
+    width: calc(100% / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.h1-photo  img {
+    position: absolute;
+    left: -750px; 
+    width: 250%;
+    height: 350px;
+    /* border-radius: 50%; */
+}
+.btn-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 22;
+}
+.looklist:hover {
+    animation-play-state: paused;
+    opacity: 0.8;
+    box-shadow: 2px 2px 2px inset black !important;
+}
+.btn {
+    text-align: center !important;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.btn:hover {
+    animation-play-state: paused;
+    opacity: 0.8;
+    box-shadow: 2px 2px 2px inset black !important;
+}
+@keyframes move {
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.content-1 button {
+    min-width: 100px;
+    font-size: 18px;
+    font-family: cairo;
+    cursor: pointer;
+    width: 120px;
+    margin: 20px;
+    border-radius: 10px;
+    background: #cacaca !important;
+    color: var(--childColor);
+    padding: 5px 0px;
+    font-weight: 600;
+    border: none;
+}
+
+img {
+    width: 50px;
+}
+.content-1 h1 {
+    position: absolute;
+    color: white;
+}
+
+.looklist {
+    min-width: 100px;
+    font-size: 18px;
+    font-family: cairo;
+    cursor: pointer;
+    width: 120px;
+    margin: 20px;
+    border-radius: 10px;
+    background: #cacaca !important;
+    color: var(--mainColor);
+    padding: 5px 0px;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+}
+
+/* CONTENT ONE END */
+/* #1f356f */
+/* CONTENT TWO START  */
+.content-2 {
+    /* background-image: url(../images/WhatsApp\ Image\ 2023-12-18\ at\ 7.10.52\ PM.WebP); */
+    /* background-image: url(../images/small-phone.jpeg); */
+    background-size: 100% 100%;
+    width: calc(100% / 1);
+    height: calc(100% / 3);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 5px;
+}
+.card {
+    direction: rtl;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+    /* border-radius: 20px; */
+    box-shadow: 2px 2px 2px black inset;
+    background-color: rgba(0, 0, 0, 0.405);
+    word-spacing: 3px;
+}
+.card img {
+    border-radius: 10%;
+}
+#cont2 h2 {
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+/* CONTENT TWO END  */
+
+/* CONTENT THREE START  */
+
+.content-3 {
+    background-color: var(--childColor);
+    color: white;
+    /* width: 100%; */
+    width: calc(100% / 1);
+    /* height: calc(100% / 3); */
+    height: 150% !important;
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+.content-3 h2 {
+    border-bottom: 2px solid;
+    width: 60%;
+}
+.all-icones img {
+    margin: 30px ;
+}
+
+
+.icones:hover {
+    opacity: .7;
+}
+
+
+/* CONTENT THREE END  */
+
+/* CONTENT FOUR START */
+.content-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10%;
+    background-color: var(--childColor);
+    box-shadow: 1px 1px 1px black,-1px -1px 1px black;
+    width: 100%;
+}
+
+.content-4 h2 {
+    position: absolute;
+    top: 10px;
+    color: white;
+    border-bottom: 2px solid ;
+
+}
+.content-4 img {
+    width: calc(100% / 5);
+    /* border-radius: 20px; */
+    box-shadow: 5px 5px 5px black;
+    margin: 20px;
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+
+}
+
+.content-4 img:hover {
+    animation-play-state: paused;
+}
+/* .ofeer1 {
+    animation-delay: 1s;
+}
+.ofeer2 {
+    animation-delay: 2s;
+}
+.ofeer3 {
+    animation-delay: 3s;
+} */
+/* .content-4 img:hover {
+    animation-play-state: paused;
+} */
+/* @keyframes scale {
+    50% {
+        transform: skewx(10deg);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+} */
+
+/* CONTENT FOUR START */
+
+
+/* section section end */
+
+/* %% */
+
+/* footer section start */
+
+footer {
+    background-color: black;
+    color: white;
+    grid-column: 1/11;
+    grid-row: 11/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    direction: ltr;
+    padding: 2%;
+
+}
+footer ul {
+    list-style: inside;
+}
+
+/* footer section end */
+
+@media (max-width: 800px) {
+    .content-1,
+    .content-2,
+    .content-3,
+    .content-4 {
+        flex-direction: column;
+    }
+
+    .content-1 {
+        /* background-image: url(../images/phone800.WebP); */
+        background-position: center center;
+        background-size: 95% 95%;
+        position: relative;
+    }
+    .btn-1 {
+        position: absolute;
+        flex-direction: row;
+        bottom: 0;
+    }
+    h1 {
+        display: none;
+    }
+    .looklist::after {
+        content: "Welcome, to P-fresh";
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        left: 35%;
+        bottom: 350px;
+        font-size: 25px;
+        color: white;
+
+    }
+    .h1-photo h1 {
+        position: absolute;
+        top: -150px !important;
+        right: -180px !important;
+    }
+    .card {
+        font-size: 15px;
+        /* background-color: #1f356f; */
+        background-size: 100% 100%;
+    }
+    .about {
+        font-size: 15px;
+    }
+    .all-icones img {
+        width: 40px !important;
+        margin: 10px;
+    }
+}
+
+
+@media (max-width: 651px) {
+    .content-1,
+    .content-2,
+    .content-3,
+    .content-4 {
+        flex-direction: column;
+    }
+    h1 {
+        display: none;
+    }
+    .looklist::after {
+        content: "Welcome, to P-fresh";
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        left: 35%;
+        bottom: 350px;
+        font-size: 25px;
+        color: white;
+
+    }
+    .card {
+        font-size: 12px;
+    }
+    .about {
+        font-size: 12px;
+    }
+
+    .all-icones img {
+        width: 40px !important;
+        margin: 10px;
+    }
+    .dir img, .dir2 img {
+        width: 30px;
+    }
+    .dir {
+        bottom: 150px;
+    }
+    .content-4 h2 {
+        font-size: 15px;
+    }
+
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+@media (max-width: 450px) {
+    .content-1 {
+        /* background-image: url(../images/phone2.webp); */
+
+    }
+    .content-1 h1 {
+        display: none;
+    }
+    .btn-1 {
+        position: absolute;
+        bottom: 0;
+    }
+    .btn {
+
+    }
+    .looklist::after {
+        content: "Welcome, to P-fresh";
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        left: 30%;
+        bottom: 350px;
+        font-size: 20px;
+        color: white;
+
+    }
+    .content-4 img {
+        transform: scale(1.2);
+        /* margin: 40px; */
+        width: 100px;
+    }
+    .content-4 img:hover {
+        /* transform: scale(3) !important; */
+        width: 60%;
+        animation-play-state: paused;
+    }
+
+    .about {
+        font-size: 10px;
+    }
+    .all-icones img {
+        width: 15px;
+    }
+    .content-4 h2 {
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 380px) {
+        footer {
+            font-size: 12px;
+        }
+        .content-3 {
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+            font-size: 10px;
+         }
+
+        .card {
+            font-size: 8px;
+            word-spacing: 1px;
+        }
+        .about {
+            font-size: 8px;
+        }
+        .all-icones img {
+            width: 10px;
+        }
+        .logo {
+            font-size: 18px;
+        }
+        nav {
+            font-size: 12px;
+        }
+
+
+}
