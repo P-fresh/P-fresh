@@ -279,7 +279,7 @@ img {
     padding: 5px;
 }
 h-cont2 {
-    direction: ltr;
+    direction: ltr !important;
 }
 /* CONTENT TWO END  */
 
