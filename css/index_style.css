@@ -72,7 +72,7 @@ nav {
 nav a {
     color: white;
     font-family: 'Cairo', sans-serif;
-    border-bottom: 3px solid #0a1951;
+    border-bottom: 3px solid #1a530b;
     /* padding: 18px; */
 
 }
@@ -83,7 +83,7 @@ nav a:hover {
 }
 .logo {
     font-size: 30px;
-    border-bottom: 5px solid #0a1951;
+    border-bottom: 5px solid #5be018;
     padding: 5px;
     /* text-shadow: 5px 5px 5px black; */
     font-family: 'Cairo', sans-serif ;
