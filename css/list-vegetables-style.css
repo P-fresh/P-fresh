@@ -41,6 +41,9 @@ body {
 .swal2-success-fix {
     background-color: #033a07 !important;
 }
+.swal2-title {
+    font-size: 18px;
+}
 /* send order end */
 
 header {
