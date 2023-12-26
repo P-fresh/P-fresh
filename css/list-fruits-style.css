@@ -21,7 +21,9 @@ body {
     background-color: var(--mainColor);
 }
 /* send order start */
-
+.swal2-confirm {
+    background-color: black !important;
+}
 .swal2-backdrop-show {
     /* background-color: var(--mainColor) !important; */
 }
