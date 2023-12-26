@@ -278,7 +278,9 @@ img {
     border-bottom: 1px solid white;
     padding: 5px;
 }
-
+h-cont2 {
+    direction: ltr;
+}
 /* CONTENT TWO END  */
 
 /* CONTENT THREE START  */
