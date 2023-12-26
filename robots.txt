@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: /index.html
-Disallow: /list.html
+Disallow: /list-vegetables.html
+Disallow: /list-fruits.html
+Disallow: /Vegetables-ready.html
 
 
-Sitemap: https://broccolistore.github.io/sitemap.xml
+Sitemap: https://p-fresh.github.io/P-fresh/sitemap.xml
