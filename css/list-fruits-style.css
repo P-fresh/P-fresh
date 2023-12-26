@@ -74,7 +74,11 @@ section div {
     align-items: center;
     flex-direction: column;
 }
-
+section div {
+    width: 90%;
+    height: 75%;
+    border-radius: 10%;
+}
 section img {
     height: 80px;
     box-shadow: 2px 2px 5px #2a6240, -2px -2px 5px #184427;
@@ -294,6 +298,6 @@ border-bottom: none;
         border-radius: 10%;
     }
 }
-.ba {
+/* .ba {
     width: 80%;
-}
+} */
