@@ -36,7 +36,9 @@ body {
 }
 .swal2-show input {
     /* background-color: var(--childColor); */
-        
+}
+.swal2-title {
+    font-size: 18px;
 }
 .swal2-success-circular-line-right,
 .swal2-success-circular-line-left,
