@@ -74,7 +74,11 @@ nav a {
     font-family: 'Cairo', sans-serif;
     border-bottom: 3px solid #1a530b;
     /* padding: 18px; */
-
+}
+nav a:active {
+    color: #5be018 !important;
+    /* padding: 10px; */
+}
 }
 nav a:hover {
     color: #02071d;
