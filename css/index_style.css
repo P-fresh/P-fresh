@@ -12,6 +12,7 @@ html { scroll-behavior: smooth; }
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* outline: 2px solid red; */
 }
 nav a:active {
     color: #5be018 !important;
@@ -58,9 +59,9 @@ header {
 header .logo {
     color: white;
     font-size: 30px;
-    border-bottom: 5px solid #0a1951;
     padding: 5px;
     font-family: 'Cairo', sans-serif ;
+    text-decoration: none;
 }
 
 header .ul-large {
@@ -132,7 +133,6 @@ header .main-list .list .ul-small li a {
 }
 .logo:hover {
     color: #02071d;
-    border-bottom: 10px solid ;
     opacity: 0.5;
 }
 /* Media In Header Start */
