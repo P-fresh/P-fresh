@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+ 
+:root {
+    --childColor: #033a07;
+    --mainColor: #0a570f;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    /* outline: 2px solid red; */
+}
+body {
+    background-color: #033a07;
+}
+
+/* send order start */
+.swal2-show {
+    background-color: var(--childColor) !important;
+    color: white;
+}
+/* send order end */
+
+/* Header Start */
+header {
+    width: 100%;
+    display: flex;
+    background-color: var(--mainColor);
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+header .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+header .ul-large {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+header .ul-large li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header .main-list {
+    display: none;
+}
+
+header .main-list .list {
+    width: 50px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+header .main-list .list:hover .ch {
+    width: 30px;
+    transition: 0.5s;
+}
+header .main-list .list:hover .ul-small {
+    display: block;
+}
+header .main-list .list .option {
+    width: 30px;
+    height: 2px;
+    background-color: green;
+
+}
+header .main-list .list .ch {
+    width: 15px;
+}
+header .main-list .list .ul-small {
+    display: none;
+    background-color: #0a570f;
+    padding: 5%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    list-style: none;
+}
+header .main-list .list .ul-small::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    border: 15px solid white;
+    border-color: transparent transparent white transparent;
+    right: 22%;
+    top: -30px;
+}
+header .main-list .list .ul-small li {
+    padding: 10px;
+}
+header .main-list .list .ul-small li:not(:last-child) {
+    border-bottom: 2px solid white;
+}
+header .main-list .list .ul-small li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Media In Header Start */
+@media (max-width: 951px) {
+    header .ul-large {
+        display: none;
+    }
+    header .main-list {
+        display: block;
+    }
+}
+/* Media In Header End */
+/* Header End */
+
+
+/* Section Start */
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+section .head-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .head-section h1 {
+  color: white;
+  border-bottom: 2px solid white;
+  font-size: 20px;
+}
+section .button {
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+/* All Products Start */
+section .all-products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+section .all-products .child {
+    background-color: #00000082;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+}
+section .all-products .child:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+section .all-products .child h2 {
+    width: 100%;
+    font-size: 16px;
+    color: white;
+}
+section .all-products .child h3 {
+    width: 100%;
+    font-size: 16px;
+    color: rgb(72, 255, 0);
+}
+section .all-products .child img {
+    width: 150px;
+    height: 80px;
+}
+/* All Products End */
+/* Section End */
+/* Footer Start */
+footer {
+    background-color: black;
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+}
+/* Footer End */
