@@ -55,6 +55,7 @@ header {
     align-items: center;
     box-shadow: 1px 2px 3px rgb(0, 0, 0);
     z-index: 555;
+    padding: 20px;
 }
 header .logo {
     color: white;
@@ -108,7 +109,7 @@ header .main-list .list .ul-small {
     display: none;
     position: absolute;
     background-color: #033a07;
-    top: 70px;
+    top: 80px;
     left: 0;
     width: 100%;
     padding: 3%;
@@ -117,9 +118,9 @@ header .main-list .list:hover .ul-small::before {
     content: "";
     position: absolute;
     width: 0;
-    border: 15px solid white;
+    border: 10px solid white;
     top: -20px;
-    right: 20%;
+    right: 22%;
     border-color: transparent transparent white transparent;
 }
 header .main-list .list .ul-small li:not(:last-child) {
@@ -142,6 +143,9 @@ header .main-list .list .ul-small li a {
     }
     header .main-list {
         display: block;
+    }
+    header .logo {
+        font-size: 16px;
     }
 }
 /* Media In Header End */
